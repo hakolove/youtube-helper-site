@@ -1,14 +1,64 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>YouTube内容管理助手</title>
+  <meta charset="UTF-8">
+  <title>YouTube Content Management Helper</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+      line-height: 1.6;
+    }
+    h1 {
+      color: #333;
+    }
+    a {
+      color: #1a73e8;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .footer {
+      margin-top: 40px;
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
 </head>
 <body>
-  <h1>YouTube内容管理助手</h1>
-  <p>本工具旨在帮助内容管理者批量更新YouTube视频的标题、描述、字幕和版权信息，提升运营效率。</p>
-  <p>本应用由上海森宇文化传媒股份有限公司开发，仅用于服务内容创建者自身的频道数据。</p>
-  <a href="/youtube-helper-site/privacy.html">查看隐私政策</a>
+  <h1>YouTube Content Management Helper</h1>
+
+  <p><strong>Description:</strong></p>
+  <p>
+    This desktop tool is designed to help YouTube content managers improve workflow efficiency. It allows users to manage video metadata (titles, descriptions, subtitles, thumbnails) and Content ID assets directly from the interface, without needing to manually operate through YouTube Studio or CMS.
+  </p>
+
+  <p>
+    The tool integrates with internal project management systems (such as Feishu) and is built purely for productivity use within a small content operation team. It does not share, analyze, or sell any user data.
+  </p>
+
+  <p><strongKey features include:</strong></p>
+  <ul>
+    <li>Batch update of video metadata (title, description, thumbnail)</li>
+    <li>Subtitles translation and upload</li>
+    <li>Asset and policy management for YouTube Content ID partners</li>
+    <li>Local secure storage of authentication tokens (no backend server)</li>
+  </ul>
+
+  <p>
+    This application requests only the <code>https://www.googleapis.com/auth/youtubepartner</code> scope, which is strictly used to enable copyright asset and policy control functionalities.
+  </p>
+
+  <div class="footer">
+    <p>
+      📄 <a href="privacy.html">View Privacy Policy</a>
+    </p>
+    <p>
+      🔧 Created and maintained by the YouTube CMS operations team.
+    </p>
+  </div>
 </body>
 </html>
